@@ -1,5 +1,17 @@
 var n3 = document.getElementById('myBtn');
+var n2 = document.getElementById('myBtn2');
+if (n2) {
+   n2.addEventListener('click', display2x2);
+}
+function display2x2() {
+   let p12 = document.getElementById("p12").value
+   let p21 = document.getElementById("p1s2").value
 
+   document.getElementById("resultado11").value=N2[0]
+   document.getElementById("resultado22").value=N2[1]
+
+   var N2=estadar(p12,p21);
+}
 if(n3){
   n3.addEventListener('click', display3x3);
 }
